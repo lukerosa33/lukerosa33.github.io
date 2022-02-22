@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Luke Rosa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="nav-socials-wrapper">
+                    <a href="https://twitter.com/fudpotato" target="_blank">
+                        <img src="sitetutimages/twitter_PNG2.png" alt="Twitter" class="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-rosa-4a2717160/" target="_blank">
+                        <img src="sitetutimages/linkedin.png" alt="Linkedin" class="icon">
+                    </a>
+                </div>
+                
+                <div class="brand">
+                    <div>LUKE ROSA</div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="header-wrapper">
+            <div class="header">Overview</div>
+        </div>
+
+        <hr>
+       
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(sitetutimages/Screen\ Shot\ 2022-02-13\ at\ 12.21.57\ PM.png)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="https://passportprotocol.io/" target="_blank">
+                                <img src="sitetutimages/passport.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            <h1>Passport Labs</h1>
+                            <h4>Ecosystem Scout, Research</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(sitetutimages/mansueto.jpeg);"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="https://blockchainchicago.finance/" target="_blank">
+                                <img src="sitetutimages/bc.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            <h1>Blockchain Chicago</h1>
+                            <h4>Director of Finance</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(sitetutimages/terra.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="sitetutimages/Papyrus.png">
+                        </div>
+
+                        <div class="subtitle">
+                            <h1>Papyrus DAO</h1>
+                            <h4>Research and Writing</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(sitetutimages/saieh-hall-economics-02-copy_0.jpeg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="https://scholarsoffinance.org/" target="_blank">
+                                <img src="sitetutimages/sof.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            <h1>Scholars of Finance</h1>
+                            <h4>Member</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(sitetutimages/football.jpg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="https://athletics.uchicago.edu/sports/fball/2021-22/schedule" target="_blank">
+                                <img src="sitetutimages/Chicago_Maroons_logo.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            <h1>UChicago Varsity Football</h1>
+                            <h4>Runningback</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(sitetutimages/chicagoharp.jpeg)"></div>
+                    
+                    <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="sitetutimages/chicagologo.png" class="chilogo">
+                        </div>
+
+                        <div class="subtitle">
+                            <h1>University of Chicago</h1>
+                            <h4>Class of 2024, Economics</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () =>{
+            portfolioItem.childNodes[1].classList.add('img-darken'); 
+        })
+
+        portfolioItem.addEventListener('mouseout', () =>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
